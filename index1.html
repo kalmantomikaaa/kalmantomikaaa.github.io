@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Személyes adatok</legend>
+        <div>
+            <label for="name">Név: *</label>
+            <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+            <label for="email">Email cím: *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="address">Cím: *</label>
+            <input type="text" name="address" id="address" required>
+        </div>
+        <div>
+            <label for="comment">Megjegyzés</label>
+            <textarea name="comment" id="comment" rows="5"></textarea>
+        </div>
+       </fieldset>
+       <fieldset>
+        <legend>Rendelés feltételei:</legend>
+        <span>Extra feltét:</span>
+        <div>
+            <input checked id="nothing" name="extra" type="radio" value="0">
+            <label for="nothing">Nem kérek</label>
+        </div>
+        <div>
+            <input id="cheese" name="extra" type="radio" value="600">
+             <label for="cheese">Sajt</label>
+        </div>
+        <div>
+            <input id="double-cheese" name="extra" type="radio" value="1000">
+            <label for="double-cheese">Dupla sajt</label>
+        </div>
+        <div>
+            <input id="bacon" name="extra" type="radio" value="1600">
+            <label for="bacon">Bacon</label>
+        </div>
+        <div>
+            <label for="sauce">Szósz:</label>
+            <select name="sauce" id="sauce">
+                <option value="0" selected>Ketchup</option>
+                <option value="100">Majonéz</option>
+                <option value="200">Mustár</option>
+            </select>
+        </div>
+    </fieldset>
+        <div>
+            <input type="button" value="Rendelés leadása"> Ár: <span>1200</span> Ft.
+        </div>
+    </form>
+</body>
+</html>
